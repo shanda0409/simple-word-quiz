@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(3, 0, 50);
+    background: linear-gradient(90deg, rgba(3, 0, 50, 1) 0%, rgba(25, 9, 0, 1) 34%, rgba(93, 35, 16, 1) 61%, rgba(106, 5, 37, 1) 100%);
+}
+
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1 {
+    font-size: 40px;
+    color: #19000a;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #19000a;
+    font-weight: 600;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: rgb(50, 2, 0);
+    background: linear-gradient(90deg, rgba(50, 2, 0, 1) 0%, rgba(25, 0, 10, 1) 34%, rgba(5, 64, 57, 1) 61%, rgba(5, 54, 106, 1) 100%);
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: rgb(3, 0, 50);
+    background: linear-gradient(90deg, rgba(3, 0, 50, 1) 0%, rgba(25, 9, 0, 1) 34%, rgba(93, 35, 16, 1) 61%, rgba(106, 5, 37, 1) 100%);
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+#next-btn:hover {
+    background: rgb(50, 2, 0);
+    background: linear-gradient(90deg, rgba(50, 2, 0, 1) 0%, rgba(25, 0, 10, 1) 34%, rgba(5, 64, 57, 1) 61%, rgba(5, 54, 106, 1) 100%);
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
